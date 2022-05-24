@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessFirst</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        /* margin: 0px;
+        padding: 0px; */
+        background-size: cover;
+        background-image: url('img/bg3.jpg');
+    }
+
+
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid red; */
+        color: aliceblue;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .left img {
+        width: 130px;
+        filter: invert(100%);
+        border-radius: 40px;
+
+    }
+
+
+
+    .right {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid white; */
+    }
+
+    .botton li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .botton li a {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: transparent;
+        border-radius: 50px;
+        color: rgb(247, 15, 15);
+        text-decoration: none;
+        padding: 16px 26px;
+    }
+
+    .botton li a:hover {
+        color: aliceblue;
+        text-decoration: underline;
+    }
+
+
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 50px auto;
+        /* border: 2px solid gold; */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        background-color: rgb(128, 64, 19);
+        border-radius: 25px;
+        color: black;
+        text-decoration: none;
+        padding: 12px 30px;
+    }
+
+    .navbar li a:hover {
+        background-color: chocolate;
+        color: aliceblue;
+        border-radius: 50px;
+    }
+
+
+
+    .container {
+        margin: 20px 285px;
+        padding: 75px;
+        border-radius: 28px;
+        /* border: 3px solid aliceblue; */
+        width: 42%;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .container h1 {
+        color: yellowgreen;
+    }
+
+    .btn {
+        font-size: 25px;
+        background-color: transparent;
+        border-radius: 30px;
+        color: gray;
+        margin: 20px 5px;
+        padding: 5px 10px;
+    }
+    
+    .btn:hover{
+        color: darkgray;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        border-radius: 15px;
+        text-align: center;
+        width: 300px;
+        font-size: 15px;
+        padding: 2px;
+        margin: 0px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/logo2.jpg" alt="">
+            <div>
+                FitnessFirst
+            </div>
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- right for login -->
+        <div class="right">
+            <ul class="botton">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Apply Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
